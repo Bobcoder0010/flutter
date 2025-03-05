@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      debugShowCheckedModeBanner:false,
+      debugShowCheckedModeBanner: false,
 
       // home: Scaffold(body:Container(
       //   //color:Colors.red,
@@ -15,53 +15,24 @@ void main() {
       //      Container(color: Colors.red,height:100,width:100,),
       //      Container(color: Colors.blue,height:100,width:100,),
 
-
       //     ],
       //   ),
-
-home: Scaffold(body:Container(
-  height: 200,
-        color:Colors.green,
-        width: double.infinity,
-        child: Row(
-         // mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          //spacing: 15,
+      home: Scaffold(
+        body: Row(
           children: [
-            Expanded(child: Container(color: Colors.red,height:100,width:100,)),
-            //SizedBox(width: 15,),
-        Expanded(child: Container(color: Colors.blue,height:100,width:100,)),
-        //SizedBox(width: 30,),
-        Spacer(),
-        Expanded(
-         // flex:5,
-          child: Container(color: Colors.yellow,height:100,width:100,)),
-        //SizedBox(width: 5,),
+            Container(color: Colors.red, height: 100, width: 100),
+            Container(
+              color: Colors.blue,
+              height: 100,
+              width: 100,
+              child: Column(
+                children: [Text("Name"), Text("Description"), Text("Price")],
+              ),
+            ),
 
+            //Container(color: Colors.green,height:100,width:100,),
           ],
         ),
-
-        
-        )
-
-
-      // home: Scaffold(body:Container(
-      //   height: 200,
-      //   width: 200,
-      //   color:Colors.amberAccent,
-      //   child:Align(
-      //     alignment:Alignment.bottomCenter,
-      //   )
-
-      //   child: Center (child:Text(data:"child is here")),
-      // )
-        // appBar: AppBar(title: Text("one")),
-        // body: Text("Hello World",style:TextStyle(
-        //   fontSize: 36,
-        //   fontWeight:FontWeight.bold,
-        //   color:Colors.blue,
-        // )),
-         
       ),
     ),
   );
